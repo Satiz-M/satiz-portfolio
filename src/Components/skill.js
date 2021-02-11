@@ -68,23 +68,25 @@ const colors = {
 
 const Skills = () => {
   return (
-    <motion.div className="skills">
-      <motion.h3
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 3, duration: 1.5 }}
-      >
-        skills
-      </motion.h3>
-      <div className="skills-container">
-        <SkillBar
-          skills={SKILLS}
-          colors={colors}
-          animationDuration={4000}
-          animationDelay={1500}
-        />
-      </div>
-    </motion.div>
+    <div className="skill-head">
+      <motion.div className="skills">
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 1.5 }}
+        >
+          skills
+        </motion.h3>
+        <div className="skills-container">
+          <SkillBar
+            skills={SKILLS}
+            colors={colors}
+            animationDuration={4000}
+            animationDelay={1500}
+          />
+        </div>
+      </motion.div>
+    </div>
   );
 };
 
