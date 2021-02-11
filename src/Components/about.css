@@ -1,0 +1,14 @@
+.about {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-container {
+  box-sizing: border-box;
+}
+svg {
+  width: 50px;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+}

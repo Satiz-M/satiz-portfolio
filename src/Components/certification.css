@@ -1,0 +1,91 @@
+.certification {
+  background-image: url("https://static.wixstatic.com/media/311dce_52d7df00bf2941aaafcac97975d16e67~mv2.png/v1/fill/w_1440,h_1095,fp_0.50_0.00,q_90,usm_0.66_1.00_0.01/311dce_52d7df00bf2941aaafcac97975d16e67~mv2.webp");
+}
+
+.title {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 5px;
+}
+.certification_box {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.certification_image {
+  width: 100%;
+}
+
+.certificate-name {
+  margin: 15px auto;
+  padding-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid white;
+  width: 60%;
+}
+
+.web-design {
+  box-shadow: 1px 1px 10px black;
+  margin-right: 10px;
+}
+
+.front-end {
+  box-shadow: 1px 1px 10px black;
+  margin-left: 10px;
+}
+
+.cards {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  margin: 30px;
+  background-color: transparent;
+}
+.inner-cards {
+  color: black;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Mobile view */
+
+@media only screen and (max-width: 600px) {
+  .title {
+    padding-top: 15px;
+    width: 80%;
+    font-size: 20px;
+  }
+  .certification_box {
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+  }
+
+  .certificate-name {
+    font-size: 15px;
+    width: 55%;
+    border-bottom: 0.5px solid white;
+  }
+  .cards {
+    margin: 15px;
+  }
+}
