@@ -1,12 +1,17 @@
 import React from "react";
 import "./about.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about">
+    <motion.div className="about">
       <div className="about-container">
         <p>About Me</p>
+        <div>
+          <h6>Sathishkumar </h6>
+        </div>
         <svg
+          className="watsapp"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="512"
@@ -28,6 +33,7 @@ const About = () => {
         </svg>
 
         <svg
+          className="facebook"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="512"
@@ -45,6 +51,7 @@ const About = () => {
         </svg>
 
         <svg
+          className="github"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="512"
@@ -57,6 +64,7 @@ const About = () => {
           />
         </svg>
         <svg
+          className="linkedIn"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="512"
@@ -70,6 +78,7 @@ const About = () => {
           </g>
         </svg>
         <svg
+          className="skype"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="512"
@@ -82,7 +91,7 @@ const About = () => {
           />
         </svg>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

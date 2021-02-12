@@ -69,7 +69,12 @@ const colors = {
 const Skills = () => {
   return (
     <div className="skill-head">
-      <motion.div className="skills">
+      <motion.div
+        className="skills"
+        drag
+        dragConstraints={{ left: 0, right: 300 }}
+        dragElastic={0.2}
+      >
         <motion.h3
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
